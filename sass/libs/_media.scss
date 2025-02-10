@@ -616,6 +616,9 @@
 		&__leftSide {
 			margin: 0 10px;
 		}
+		&__bigMenu {
+			top: -80px;
+		}
 	}
 	.nft .content,
 	.games .content {
@@ -789,7 +792,7 @@
 		&__triangle {
 			margin-top: 5px;
 			margin-bottom: 10px;
-			z-index: 10;
+			z-index: 2;
 			width: 47px;
 			height: 24px;
 			background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
@@ -825,6 +828,20 @@
 			transition: 0.3s all ease-in-out;
 		}
 	}
+	.cross {
+		span {
+			&:nth-child(1) {
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) {
+				display: none;
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg) translateX(4px) translateY(-4px);
+			}
+		}
+	}
+
 	.header {
 		padding-top: 100px;
 		&__wrapper {
