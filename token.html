@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Token</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet"
+        href="css/style.min.css" />
+</head>
+
+<body>
+    @@include('html/menu.html',{
+    "links":{
+    "home": "index.html#team",
+    "token": "token.html",
+    "func": "fund.html#fundroad",
+    "marketplace": "finity.html",
+    }
+    })
+    @@include('html/token.html', {
+    "withmodifikator": "",
+    })
+    @@include('html/diagram.html')
+    @@include('html/roadmap.html')
+    @@include('html/contacts.html', {
+    "withmodifikator": "contacts__modifikator",
+    "coins":{
+    "coin1": "@@include('contacts_coin3.html')",
+    "coin2": "@@include('contacts_coin2.html')"
+    }
+    })
+    @@include('html/address.html')
+
+
+    @@include('html/footer.html', {
+    "withmodifikator": "footer__modifikator",
+    })
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="token.js"></script>
+
+</html>

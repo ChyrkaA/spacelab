@@ -1,0 +1,182 @@
+.token {
+	background: url(../img/token/bckg.gif) no-repeat center/auto;
+	margin-bottom: 229px;
+	position: relative;
+	width: 100%;
+	&__wrapper {
+		position: relative;
+		top: 229px;
+		.content__button {
+			margin-top: 45px;
+			width: 260px;
+			height: 63px;
+			padding: 0;
+			background: transparent;
+			&:before {
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 2px;
+				background: linear-gradient(103.59deg, #fc84ff 13.23%, #54d1fa 91.95%);
+				-webkit-mask: linear-gradient(#fff 0 0) content-box,
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: xor;
+				mask-composite: exclude;
+				z-index: 0;
+			}
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 26.82px;
+		}
+	}
+	&__info {
+		width: 523px;
+	}
+	&__header {
+		margin: 0;
+		font-family: Chakra Petch;
+		font-size: 120px;
+		font-weight: 600;
+		line-height: 130px;
+		text-align: left;
+		width: 100%;
+		background: linear-gradient(103.59deg, #fc84ff 13.23%, #54d1fa 91.95%);
+		background-clip: text;
+		color: transparent;
+	}
+	h2 {
+		line-height: 100px;
+		text-align: right;
+		height: 100px;
+	}
+	&__text {
+		font-family: Chakra Petch;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 28.6px;
+		width: 523px;
+		height: 109px;
+		color: rgba(255, 255, 255, 1);
+		margin-top: 21px;
+	}
+	&__cards {
+		margin-top: 173px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__card {
+		width: 480px;
+		height: 283px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 60px;
+		box-shadow: 2px 2px 9px 0px rgba(145, 0, 157, 1);
+		position: relative;
+		padding: 0;
+		background: rgba(13, 13, 13, 1);
+		z-index: 1;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 60px;
+			padding: 2px;
+			background: linear-gradient(103.59deg, #fc84ff 13.23%, #54d1fa 91.95%);
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+			z-index: 1;
+		}
+		&--img {
+			margin-top: 30px;
+			width: 90px;
+			height: 90px;
+		}
+		&--text {
+			width: 430px;
+			height: 95px;
+			text-align: center;
+			font-family: Montserrat;
+			font-size: 17px;
+			font-weight: 500;
+			line-height: 20.72px;
+			color: rgba(255, 255, 255, 1);
+			margin-top: 19px;
+		}
+		&:nth-child(3) {
+			.token__card--text {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 19.5px;
+			}
+		}
+		&--link {
+			font-family: Montserrat;
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 26.82px;
+			background: linear-gradient(
+				103.59deg,
+				#86affe 13.23%,
+				#a57aff 53.2%,
+				#fb84ff 91.95%
+			);
+			background-clip: text;
+			color: transparent;
+		}
+	}
+	&__fraktal {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 0;
+	}
+	&__modifikator {
+		background: url(../img/fund/fund.gif) no-repeat center/auto;
+		.token {
+			&__header {
+				background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
+				background-clip: text;
+				color: transparent;
+			}
+			&__card {
+				box-shadow: 2px 2px 9px 0px rgba(22, 157, 0, 1);
+				&::before {
+					background: linear-gradient(
+						148.71deg,
+						#b2ff0f 10.47%,
+						#76ffef 88.29%
+					);
+				}
+				&:nth-child(1) {
+					.token__card--text {
+						width: 440px;
+						letter-spacing: 0.02em;
+					}
+				}
+				&:nth-child(2) {
+					.token__card--text {
+						width: 420px;
+						font-size: 17px;
+						font-weight: 500;
+						line-height: 20.72px;
+					}
+				}
+			}
+		}
+		.content__button {
+			&:before {
+				background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
+			}
+		}
+	}
+	&__fraktal2 {
+		display: none;
+	}
+}

@@ -1,0 +1,41 @@
+.coming {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(13, 13, 13, 1);
+	position: relative;
+	overflow-y: hidden;
+	&__wrapper {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__header {
+		font-family: Chakra Petch;
+		font-size: 150px;
+		font-weight: 600;
+		line-height: 195px;
+		letter-spacing: 0.12em;
+		color: rgba(255, 255, 255, 1);
+		z-index: 1;
+	}
+	&__fraktal {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	&__fraktal1 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 0;
+	}
+	&__fraktal2 {
+		display: none;
+	}
+	&__fraktal3 {
+		display: none;
+	}
+}

@@ -1,0 +1,110 @@
+.submit {
+	order: 18;
+	margin-top: 273px;
+	position: relative;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	&__top {
+		width: 899px;
+		height: 349px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			border-top: 2px solid rgba(255, 255, 255, 1);
+			border-right: 2px solid rgba(255, 255, 255, 1);
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 70px;
+			height: 70px;
+			border-bottom: 2px solid rgba(255, 255, 255, 1);
+			border-left: 2px solid rgba(255, 255, 255, 1);
+		}
+	}
+	&__header {
+		margin-top: 50px;
+		font-family: Montserrat;
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 60.95px;
+		color: rgba(255, 255, 255, 1);
+	}
+	&__btns {
+		margin-top: 108px;
+		.content__button {
+			box-shadow: 2.36px 2.36px 23.63px 0px rgba(239, 57, 255, 0.5);
+			border-radius: 0px 60px;
+			&:before {
+				top: -3px;
+				left: -3px;
+				right: -3px;
+				bottom: -3px;
+				border-radius: 0px 60px;
+				background: linear-gradient(103.59deg, #fc84ff 13.23%, #54d1fa 91.95%);
+			}
+		}
+	}
+	.team__social {
+		&s {
+			margin-top: 57px;
+			width: 735px;
+			height: 50px;
+			display: flex;
+			justify-content: space-between;
+		}
+		&--linkedin,
+		&--instagram,
+		&--telegram,
+		&--twitter,
+		&--reddit,
+		&--discord {
+			width: 50px;
+			height: 50px;
+		}
+	}
+	&__fraktal {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		z-index: -1;
+		&--img {
+			position: absolute;
+			top: -70px;
+			right: 50px;
+		}
+		&--fraktal {
+			position: absolute;
+			top: -300px;
+			right: 0;
+			z-index: -1;
+		}
+		&:nth-child(3) {
+			transform: scaleX(-1);
+			.submit__fraktal--img {
+				top: unset;
+				bottom: -50px;
+			}
+			.submit__fraktal--fraktal {
+				top: unset;
+				bottom: -300px;
+				z-index: -1;
+			}
+		}
+	}
+}

@@ -1,0 +1,245 @@
+//grant page
+
+.content {
+	order: 5;
+	position: relative;
+	margin-top: 223px;
+	.container {
+		margin: 0;
+		margin-left: 154px;
+		margin-right: calc(100% - 154px - 1571px);
+		width: 1571px;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 100%;
+	}
+	&__img {
+		width: 856px;
+		height: 765px;
+	}
+	&__info {
+		margin-left: 18px;
+		display: flex;
+		flex-direction: column;
+		max-width: 689px;
+	}
+	&__header {
+		font-family: Chakra Petch;
+		font-size: 85px;
+		font-weight: 600;
+		line-height: 110.5px;
+		letter-spacing: -0.02em;
+		width: 689px;
+		height: 222px;
+		position: relative;
+		color: rgba(255, 255, 255, 1);
+		span {
+			background: linear-gradient(149deg, #b2ff0f 0%, #76ffef 100%);
+			background-clip: text;
+			color: transparent;
+			font-family: "Chakra Petch";
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			border-top: 2px solid rgba(255, 255, 255, 1);
+			border-right: 2px solid rgba(255, 255, 255, 1);
+		}
+	}
+	&__text {
+		font-size: 25px;
+		font-weight: 500;
+		line-height: 30.48px;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 1);
+		margin-top: 25px;
+		margin-bottom: 0;
+		width: 677px;
+		height: 191px;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -26px;
+			left: -60px;
+			width: 70px;
+			height: 70px;
+			border-bottom: 2px solid rgba(255, 255, 255, 1);
+			border-left: 2px solid rgba(255, 255, 255, 1);
+		}
+	}
+	&__buttonLineTitle {
+		margin-top: 51px;
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		transform: translateX(-60px);
+	}
+	&__button {
+		flex-shrink: 0;
+		width: 297px;
+		height: 78px;
+		background: #0d0d0d;
+		padding: 22px 20px;
+		border-radius: 60px 0px;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: -3px;
+			left: -3px;
+			right: -3px;
+			bottom: -3px;
+			border-radius: 60px 0px;
+			background: linear-gradient(148.71deg, #b2ff0f 10.47%, #76ffef 88.29%);
+			z-index: -1;
+		}
+		font-size: 27px;
+		font-weight: 600;
+		line-height: 32.91px;
+		color: rgba(255, 255, 255, 1);
+	}
+	&__line {
+		flex-shrink: 0;
+		margin-left: 7px;
+		width: 401px;
+		height: 23px;
+		border-top: 2px dashed rgba(255, 255, 255, 1);
+		border-bottom: 2px solid rgba(255, 255, 255, 1);
+	}
+	&__title {
+		position: absolute;
+		top: 5px;
+		right: -95px;
+		transform: rotate(90deg);
+		font-family: Chakra Petch;
+		font-size: 19px;
+		font-weight: 400;
+		line-height: 34.2px;
+		color: rgba(255, 255, 255, 1);
+	}
+	.fraktal {
+		position: absolute;
+		top: -100px;
+		right: 0;
+		z-index: -1;
+	}
+}
+
+//games page
+
+.games {
+	order: 8;
+	.container {
+		margin-left: 265px;
+		margin-right: calc(100% - 265px - 1501px);
+		width: 1501px;
+	}
+	margin-top: 109px;
+}
+.games .content {
+	max-width: 678px;
+	&__img {
+		width: 804px;
+		height: 788px;
+	}
+	&__header {
+		width: 678px;
+		span {
+			background: linear-gradient(145.54deg, #7673ff 10.4%, #42f4ff 92.38%);
+			background-clip: text;
+			color: transparent;
+			font-family: "Chakra Petch";
+		}
+	}
+	&__text {
+		height: 159px;
+		width: 673px;
+		&:after {
+			bottom: -70px;
+		}
+	}
+	&__button {
+		&:before {
+			background: linear-gradient(
+				103.59deg,
+				#54d6ff 13.23%,
+				#c275ff 56.28%,
+				#f36aff 91.95%
+			);
+		}
+	}
+	&__info {
+		margin-left: 0;
+	}
+
+	&__buttonLineTitle {
+		margin-top: 95px;
+	}
+}
+.games .fraktal {
+	left: 0;
+	right: unset;
+	top: -350px;
+}
+
+//nft page
+
+.nft {
+	order: 10;
+	margin-top: 140px;
+	.container {
+		margin-left: 175px;
+		margin-right: calc(100% - 175px - 1541px);
+		width: 1541px;
+	}
+}
+.nft .content {
+	&__img {
+		width: 783px;
+		height: 749px;
+	}
+	&__header {
+		width: 695px;
+		line-height: 109px;
+		letter-spacing: -0.02em;
+		span {
+			background: linear-gradient(144.66deg, #ff6c56 6.96%, #ff9344 88.16%);
+			background-clip: text;
+			color: transparent;
+			font-family: "Chakra Petch";
+		}
+	}
+	&__text {
+		height: 160px;
+		width: 695px;
+		&:after {
+			bottom: -70px;
+		}
+	}
+	&__buttonLineTitle {
+		margin-top: 95px;
+	}
+	&__button {
+		&:before {
+			background: linear-gradient(144.66deg, #ff6c56 6.96%, #ff9344 88.16%);
+		}
+	}
+}
+.nft .fraktal {
+	top: -150px;
+}
+.nft .fraktal2 {
+	display: none;
+}

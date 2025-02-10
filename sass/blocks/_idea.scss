@@ -1,0 +1,119 @@
+.idea {
+	order: 4;
+	margin-top: 91px;
+	&__header {
+		display: flex;
+		justify-content: center;
+		font-family: Chakra Petch;
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 78px;
+		color: rgba(255, 255, 255, 1);
+		span {
+			background: linear-gradient(
+				144deg,
+				#54d6ff 0%,
+				#c275ff 54.69%,
+				#f36aff 100%
+			);
+			background-clip: text;
+			color: transparent;
+		}
+	}
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		.idea__card:nth-child(2) .idea__card--text,
+		.idea__card:nth-child(4) .idea__card--text {
+			font-size: 17px;
+			font-weight: 500;
+			line-height: 20.72px;
+			letter-spacing: 0;
+		}
+	}
+	&-container {
+		margin-top: 40px;
+		width: 100%;
+	}
+	&__card {
+		width: 350px;
+		height: 348px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 60px;
+		box-shadow: 2px 2px 9px 0px rgba(145, 0, 157, 1);
+		position: relative;
+		padding: 0;
+		background: rgba(13, 13, 13, 1);
+		z-index: 1;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 60px;
+			padding: 2px;
+			background: linear-gradient(
+				103.59deg,
+				#86affe 13.23%,
+				#a57aff 53.2%,
+				#fb84ff 91.95%
+			);
+			-webkit-mask: linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+			z-index: 1;
+		}
+
+		&--img {
+			margin-top: 22px;
+			width: 90px;
+			height: 90px;
+		}
+		&--header {
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 34.13px;
+			text-align: center;
+			margin-top: 11px;
+			color: rgba(255, 255, 255, 1);
+		}
+		&--text {
+			width: 319px;
+			height: 114px;
+			padding: 10px;
+			margin: 0;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 21.94px;
+			letter-spacing: 0.02em;
+			text-align: center;
+			color: rgba(255, 255, 255, 1);
+			margin: 9px 11px 0 20px;
+		}
+		&--more {
+			width: 113px;
+			height: 45px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 10px;
+			margin-bottom: 13px;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 24.38px;
+			background: linear-gradient(
+				103.59deg,
+				#86affe 13.23%,
+				#a57aff 53.2%,
+				#fb84ff 91.95%
+			);
+			background-clip: text;
+			color: transparent;
+		}
+	}
+}

@@ -1,0 +1,74 @@
+.diagram {
+	padding-top: 185px;
+	position: relative;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__header {
+		margin: 0;
+		font-size: 69px;
+		font-weight: 600;
+		line-height: 84.11px;
+		color: rgba(255, 255, 255, 1);
+		span {
+			background: linear-gradient(
+				164deg,
+				#86affe 0%,
+				#a57aff 50.78%,
+				#fb84ff 100%
+			);
+			background-clip: text;
+			color: transparent;
+		}
+	}
+	&__text {
+		padding: 0;
+		margin: 0;
+		font-family: Montserrat;
+		font-size: 25px;
+		font-weight: 500;
+		line-height: 38.75px;
+		color: rgba(255, 255, 255, 1);
+		width: 1113px;
+		text-align: center;
+		margin-top: 21px;
+	}
+	&__img {
+		width: 1087px;
+		margin-top: 68px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&--1 {
+			pointer-events: none;
+		}
+		&--2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			opacity: 0;
+			transition: 0.3s all ease-in-out;
+		}
+	}
+	&__circle {
+		width: 687px;
+		height: 687px;
+		border-radius: 100%;
+		position: absolute;
+		background-color: transparent;
+		top: 94px;
+	}
+	&__fraktal {
+		position: absolute;
+		left: 0;
+		top: -400px;
+		z-index: -1;
+	}
+	&__fraktal2,
+	&__fraktal3 {
+		display: none;
+	}
+}

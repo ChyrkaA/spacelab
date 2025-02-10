@@ -1,0 +1,66 @@
+.address {
+	order: 21;
+	margin-top: 248px;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__header {
+		margin: 0;
+		padding: 0;
+		font-family: Chakra Petch;
+		font-size: 64px;
+		font-weight: 600;
+		line-height: 83.2px;
+		color: rgba(255, 255, 255, 1);
+		span {
+			background: linear-gradient(163deg, #fc84ff 0%, #54d1fa 100%);
+			background-clip: text;
+			color: transparent;
+		}
+	}
+	&__text {
+		margin-top: 25px;
+		font-size: 19px;
+		font-weight: 500;
+		line-height: 23.16px;
+		color: rgba(255, 255, 255, 1);
+	}
+	&__token {
+		margin-top: 70px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 863px;
+		height: 96px;
+		border-radius: 50px;
+		border: 1px solid rgba(255, 255, 255, 1);
+		&--text {
+			margin-left: 33px;
+			color: rgba(255, 255, 255, 1);
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24.38px;
+		}
+		&--btn {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 24.38px;
+			color: rgba(255, 255, 255, 1);
+			width: 190px;
+			height: 76px;
+			border-radius: 50px;
+			margin-right: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(103.59deg, #fc84ff 13.23%, #54d1fa 91.95%);
+			&_img {
+				margin-right: 14px;
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+}

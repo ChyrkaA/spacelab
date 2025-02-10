@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet"
+        href="css/style.min.css" />
+</head>
+
+<body>
+    @@include('html/menu.html', {
+    "links":{
+    "home": "index.html",
+    "token": "token.html#roadmap",
+    "func": "fund.html#fundroad",
+    "marketplace": "finity.html",
+    }
+    })
+    @@include('html/header.html')
+    @@include('html/idea.html')
+    @@include('html/grant.html')
+    @@include('html/games.html')
+    @@include('html/nft.html')
+    @@include('html/team.html')
+    @@include('html/slider.html')
+    @@include('html/questions.html')
+    @@include('html/social.html')
+    @@include('html/contacts.html', {
+    "withmodificator": "",
+    "coins":{
+    "coin1": "@@include('contacts_coin1.html')",
+    "coin2": "@@include('contacts_coin2.html')"
+    }
+    })
+    @@include('html/footer.html', {
+    "withmodificator": "",
+    })
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

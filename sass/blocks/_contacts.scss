@@ -1,0 +1,144 @@
+.contacts {
+	order: 20;
+	margin-top: 280px;
+	position: relative;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	&__header {
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 60.95px;
+		color: rgba(255, 255, 255, 1);
+	}
+	&__form {
+		margin-top: 22px;
+		min-height: 345px;
+		width: 612px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__input {
+		width: 100%;
+		height: 95px;
+		background: transparent;
+		border: none;
+		background-image: linear-gradient(
+			103.59deg,
+			#fc84ff 13.23%,
+			#54d1fa 91.95%
+		);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: 100% 3px;
+		color: rgba(255, 255, 255, 1);
+		outline: none;
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 34.13px;
+		padding-left: 10px;
+		padding-top: 30px;
+	}
+	&__button {
+		width: 220px;
+		height: 67px;
+		background: #0d0d0d;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0px 60px;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: -3px;
+			left: -3px;
+			right: -3px;
+			bottom: -3px;
+			border-radius: 0px 60px;
+			background: linear-gradient(103.59deg, #fc84ff 13.23%, #54d1fa 91.95%);
+			filter: drop-shadow(2px 2px 3px rgba(239, 57, 255, 0.5));
+			z-index: -1;
+		}
+		font-size: 28px;
+		font-weight: 600;
+		line-height: 34.13px;
+		color: rgba(255, 255, 255, 1);
+		margin-top: 60px;
+	}
+	&__coin {
+		position: absolute;
+		top: -70px;
+		&--img {
+			position: absolute;
+			width: 455.74px;
+			height: 355.74px;
+			top: 38.99px;
+			left: 77px;
+			transform: rotate(12.5deg);
+			z-index: 0;
+		}
+		svg {
+			position: absolute;
+			left: 0;
+
+			top: -200px;
+			z-index: -1;
+		}
+		&2 {
+			position: absolute;
+			top: -120px;
+			width: 100%;
+			&--img {
+				position: absolute;
+				width: 245px;
+				height: 220px;
+				top: 350px;
+				right: 152px;
+				z-index: 0;
+			}
+			svg {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: -1;
+			}
+		}
+	}
+
+	&__modifikator {
+		margin-top: 552px;
+		.contacts {
+			&__coin {
+				&2 {
+					top: -420px;
+				}
+				&3 {
+					position: absolute;
+					width: 100%;
+					top: 30px;
+					&--img {
+						position: absolute;
+						width: 245px;
+						height: 220px;
+						top: 330px;
+						left: 200px;
+						z-index: 0;
+						transform: scaleX(-1);
+					}
+					svg {
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: -1;
+					}
+				}
+			}
+		}
+	}
+}

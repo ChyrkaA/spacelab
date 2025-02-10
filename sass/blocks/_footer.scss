@@ -1,0 +1,75 @@
+.footer {
+	order: 100;
+	margin-top: 159px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 122px;
+	padding-right: 99px;
+	padding-bottom: 35px;
+	max-height: 240px;
+	border-bottom: 1px solid rgba(255, 255, 255, 1);
+	padding-top: 36px;
+	overflow-y: hidden;
+	.contacts__coin2 {
+		margin-left: 107px;
+		top: 30px;
+		position: relative;
+		width: 134.07px;
+		height: 144px;
+		&--img {
+			width: 124px;
+			height: 110px;
+			position: absolute;
+			top: 0;
+			right: 20px;
+		}
+		&--fraktal {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			transform: scale(2);
+			z-index: -1;
+		}
+	}
+	&__info {
+		width: 1468px;
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bottom {
+		margin-top: 55px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__text {
+		width: 978px;
+		height: 42px;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 20.72px;
+		color: rgba(149, 149, 149, 1);
+	}
+	.button__buy {
+		margin-right: 0;
+	}
+	&__modifikator {
+		border-top: 1px solid rgba(255, 255, 255, 1);
+		margin-top: 119px;
+	}
+	.menu {
+		&__leftSide {
+			margin: 0;
+		}
+		&__list {
+			padding: 0;
+		}
+	}
+}
+.fund__modifikator {
+	margin-top: 103px;
+}
