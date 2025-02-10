@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		action("click");
 	}
 	window.addEventListener("load", function () {
-		console.log(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
+		console.log(navigator.userAgent);
 		if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
 			const videos = document.querySelectorAll("video");
 
