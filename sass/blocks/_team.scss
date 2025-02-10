@@ -101,16 +101,18 @@
 		font-weight: 600;
 		line-height: 26.82px;
 		color: rgba(255, 255, 255, 1);
+		display: flex;
+		align-items: center;
+		svg {
+			flex-shrink: 0;
+			width: 15px;
+			height: 10px;
+			margin-left: 10px;
+		}
 		div {
 			width: 73px;
 			display: flex;
 			align-items: center;
-			svg {
-				flex-shrink: 0;
-				width: 15px;
-				height: 10px;
-				margin-left: 10px;
-			}
 		}
 	}
 	.fraktal,
